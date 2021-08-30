@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\prDTO\prDTO.csproj" />
+    <ProjectReference Include="..\prEntidades\prEntidades.csproj" />
+    <ProjectReference Include="..\prRepository\prRepository.csproj" />
+    <ProjectReference Include="..\prUtility\prUtility.csproj" />
+  </ItemGroup>
+
+</Project>
